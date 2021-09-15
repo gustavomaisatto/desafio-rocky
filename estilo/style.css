@@ -1,0 +1,874 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgb(55, 0, 255);
+}
+
+/*Header and navigation menu*/
+header {
+    color: white;
+    width: 90%;
+    height: 100vh;
+     background: url("../imagens/web/s1_ft1.png");
+     background-size:  cover;
+     background-repeat: no-repeat;
+     max-width: 1360px;
+}
+
+
+#nav {
+    position: relative;
+    display: flex;
+}
+#nav > img {
+    height: 32px;
+    margin-top: 15px;
+}
+#btn-mobile {
+    display: none;
+}
+#nav > #menu {
+    display: flex;
+    margin-top: 15px;
+    height: 30px;
+}
+
+#nav > #menu > li {
+    list-style: none;
+    margin-left: 25px;
+    font-weight: bold;
+}
+.menu-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+#nav > ul > li a:hover {
+    color: rgb(182, 182, 182);
+}
+#texto-nav {
+    text-align: center;
+    margin-top: 70px;
+        width: 100%;
+    max-width: 1360px;
+}
+#texto-nav #descricao {
+    width: 70%;
+}
+h1 {
+    font-size: 95px;
+}
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+#botao-contato {
+    color: white;
+    font-size: 15px;    
+    position: relative;
+    background-color: #1CD4E9;
+    width: 270px;
+    height: 55px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 70px;
+}
+/*Main section */
+section {
+    background: url(../imagens/web/bg.png);
+    width: 90%;
+    padding: 0;
+    background-size: cover;
+    max-width: 1360px;
+    border: 1px solid black;
+}
+h2 {
+    font-size: 38px;
+    margin-top: 95px;
+    margin-left: 85px;
+    margin-bottom: 60px;
+}
+#paragrafo {
+    background-color: white ;
+    margin-left:100px;
+    margin-top: 50px;
+    width: 700px;
+    height: 350px;
+    box-shadow: 0 0 0.5em rgb(131, 131, 131);
+    border-style: none;
+    padding: 20px; 
+}
+#paragrafo > p {
+    color: black;
+    margin-top: 10px;
+    font-weight: 400;
+}
+#row {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-right: 0;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.servico {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-image: url(../imagens/web/s3_ft1.png);
+    background-repeat: no-repeat; 
+    background-size: contain;
+    width: 340px;
+    height: 440px; 
+    margin-right: 0;
+    margin-left: 0;
+}
+h3 {
+    color: yellow;
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.servico > p {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 17px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 500;
+}
+
+.midia {
+    text-align: center;
+    color: white;
+    background: url(../imagens/web/s3_ft2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 340px;
+    height: 440px; 
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.midia > p {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 17px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 500;
+}
+.tecnologica {
+    text-align: center;
+    color: white;
+    background: url(../imagens/web/s3_ft3.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 340px;
+    height: 440px; 
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.tecnologica > p {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 17px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 500;
+}
+
+.row1 {
+    display: flex;
+    padding-right: 0;
+    margin-top: 80px;  
+    margin-bottom: 20px;
+    justify-content: space-evenly;
+}
+
+#diferenciais > h2 {
+    margin-top: 90px;
+    font-size: 42px;
+}
+.dif1 {
+    background: url(../imagens/web/s4_ft1.png);
+    text-align: center;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 248px;
+    height: 415px; 
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+.dif1 > p {
+    font-size: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 150px;
+    font-weight: bold;
+}
+.dif2 {
+    background: url(../imagens/web/s4_ft2.png);
+    text-align: center;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 248px;
+    height: 415px;
+    margin-left: 10%;
+    margin-top: 20px;
+    margin-right: 10%;
+
+}
+.dif2 > p {
+    font-size: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top:  150px;
+    font-weight: bold;
+}
+.dif3 {
+    background:url(../imagens/web/s4_ft3.png);
+    text-align: center;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 248px;
+    height: 415px;
+    padding: 0 0 0 0;
+    margin: 0;
+    margin-top: 20px;
+    margin-right: 10%;
+}
+.dif3 > p {
+    font-size: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 150px;
+    font-weight: bold;
+}
+/*footer and contacts / form */
+footer {
+    background-color: yellow;
+    height: 600px;
+    padding-top: 50px;
+    width: 90%;
+    max-width: 1360px;
+}
+
+#rodape {
+    background-color: #191919;
+    height: 90%;
+    display: flex;
+}
+form {
+    margin-top: 30px;
+    width: 370px;
+    background-color: #818181;
+    height: 450px;
+}
+.input-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; 
+}
+.inputMsg {
+    outline: none;
+    border: none;
+    width: 90%;
+    height: 30px;
+    padding: 5px;
+}
+input::placeholder {
+    font-size: 18px;
+    color: #DCDCDC; 
+}
+fieldset {
+    padding-top: 10px;
+    border: none;
+}
+#submit {
+    width: 90%;
+    background-color: #1CD4E9;
+    color: white;
+    font-size: 18px;
+    height: 40px;
+    outline: none;
+    border: none;
+    padding: 0;
+}
+.input-box:last-child {
+    margin-top: 50px;
+}
+#submit:hover {
+    background-color: #12adbe;
+    cursor: pointer;
+}
+
+textarea {
+    outline: none;
+    border: none;
+    width: 90%;
+    padding: 5px;
+    margin-top: 10px;
+    
+}
+textarea::placeholder {
+    color: #DCDCDC;
+    font-size: 18px;
+}
+
+.input{
+    color: blue;
+} 
+#contatos {
+    color: white;
+    width: 40%;
+}
+.area-texto {
+    margin-top: 10px;
+}
+.area-texto > p {
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    
+}
+#azul {
+    color: #1CD4E9;
+}
+
+#amarelo {
+   color: #EFE60B;
+}
+.logos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+.logos > img {
+    width: 370px;
+}
+.contato {
+    display: flex;
+    width: 380px;
+    margin-top: 10px;
+}
+.contato > p { 
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+.contato > .telefone {
+    border-left: 1px solid white;
+    padding-left: 40px;
+}
+.contato > .email {
+    margin-left: -05px;
+    margin-right: 35px;
+}
+.contato > .email, .contato > .telefone {
+    display: flex;
+}
+.contato > .email img, .contato > .telefone img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.endereco {
+    text-align: left;
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
+}
+.endereco > p{
+    margin: 0;
+    width: 350px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 8px;
+}
+.endereco > img {
+    width: 20px;
+    margin-right: 8px;
+    margin-left: -5px;
+}
+.logos {
+    margin-top: 10px;   
+}
+
+
+/*-------------------MOBILE------------------*/
+#cancel-menu {
+    display: none;
+}
+.servico-lista-item {
+    display: none;
+}
+#servico-seta {
+    display: none;
+}
+#servico-lista {
+    display: none;
+}
+@media (max-width: 768px) {
+    #imagem {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #imagem img {
+        width: 200px;
+        height: 50px;
+    }
+    #image a {
+        border: 1px solid;
+    }
+    #btn-mobile {
+        display: block;
+        
+    }
+    #nav #menu {
+        display: block;
+        position: absolute;
+        width: 0px;
+        top: 0px;
+        background-color:  rgba(128, 128, 128, 0.541);
+        height: 250px;
+        z-index: 1000;
+        transition: .6s;
+        visibility: hidden;
+        overflow-x: hidden;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        padding-top: 10px;
+        padding-left: auto;
+        padding-right: auto;
+    }
+    #nav.active #menu {
+        display: block;
+        width: 32%;
+        visibility: visible;
+        overflow-x: auto;
+        padding-left: -10px;
+    }
+    
+    #servico-lista {
+        display: none;
+        height: 0;
+        transition: 0.6s;
+    }
+    #servico-lista li {
+        display: none;
+        font-weight: bold;
+        padding: 0.5rem 0;
+        font-size: 10px;
+        color: white;
+    }
+    #nav.servico #servico-lista {
+        display: block;
+        height: 100px;
+    }
+    #nav.active li {
+        display: block;
+    }
+    #nav.active #btn-mobile {
+        visibility: hidden;
+    }
+
+    ul > li{
+        padding: 0.5rem 0;  
+        color: white;
+        font-weight: bold;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.514);
+        width: 75%;
+        
+    }
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        color: white;
+        position: absolute;
+    }
+    #cancel-menu {
+        display: block;
+        font-size: 30px;
+        position: absolute;
+        right: 15px;
+        color: white;
+        cursor: pointer;
+        margin-top: -4px;
+    }
+    #hamburger {
+        display: block;
+        border-top: 4px solid white;
+        width: 40px;
+    }
+    #hamburger::after, #hamburger::before {
+        content: '';
+        display: block;
+        width: 40px;
+        height: 4px;
+        background-color: white;
+        margin-top: 5px;
+    }
+    #servico-lista-container span {
+        display: block;
+        cursor: pointer;
+    }
+    #row, .row1{
+        padding: 0;
+        flex-wrap: wrap;
+    }
+    .servico {
+        background: url(../imagens/mobile/s3\ ft1.png);
+        width: 380px;
+        height: 311px;
+    }
+    .midia {
+        background: url(../imagens/mobile/s3\ ft2.png);
+        width: 380px;
+        height: 311px;
+    }
+    .tecnologica {
+        background: url(../imagens/mobile/s3\ ft3.png);
+        width: 380px;
+        height: 311px;
+    }
+    .dif1 {
+        background: url(../imagens/mobile/s4_ft1.png);
+        width: 380px;
+        height: 379px;
+        margin: 0;
+    }
+    .dif2 {
+        padding: 0;
+        margin: 0;
+        background: url(../imagens/mobile/s4\ ft2.png);
+        width: 380px;
+        height: 379px;
+    }
+    .dif3 {
+        margin: 0;
+        background: url(../imagens/mobile/s4\ ft3.png);
+        width: 380px;
+        height: 379px;
+    }
+    .servico > p, .midia > p, .tecnologica > p{
+        margin-top: 20px;
+        font-size: 10px;
+    }
+
+     h3 {
+         margin-top: 50px;
+     }
+    header {
+        background: url(../imagens/web/s1_ft1.png);
+        height: 100vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    #texto-nav > h1 {
+        font-size: 50px;
+    }
+    #texto-nav {
+        margin-top: 50px;
+    }
+    #texto-nav #descricao > p {
+        line-height: 2;
+    }
+    #texto-nav {
+        width: 100%;
+    }
+    #row .servico > p, #row .tecnologica > p, #row .midia > p {
+        font-size: 15px;
+    }
+    #servicos, #diferenciais {
+        text-align: left;
+    }
+    #servicos h2, #diferenciais h2, article h2 {
+        margin-left: 0;
+    }
+}
+
+@media (max-width:550px) {
+    #texto-nav h1 {
+        font-size: 40px;
+    }
+    header {
+
+        background: url(../imagens/mobile/s1\ mobile.png);
+    }
+    section {
+        background: none;
+    }
+     #row .servico > p, #row .tecnologica > p, #row .midia > p {
+        font-size: 13px;
+    }
+
+    #row, .row1 {
+        width: 100%;
+        margin-left: 0px;
+    }
+    #servicos {
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+}
+@media (max-width: 450px) {
+    .contato {
+        font-size: 10px;
+    }
+    #contatos .contato {
+
+        justify-content: center;
+    }
+    #contatos .telefone {
+
+        margin: 0;
+        padding-left: 10px;
+    }
+   .contato .email > p, .contato .telefone > p { 
+        font-size: 11px;
+    }
+    #rodape #contatos .logo img {
+        width: 70%;
+        margin: 0;
+    }
+    #rodape .contatos {
+        padding: 0;
+        width: 100%;
+    }
+    #rodape .contatos .telefone p {
+        margin: 0;
+        padding: 0;
+    }
+    .dif1 {
+        background-size: 100% 100%;
+        width: 280px;
+        height: 279px;
+    }
+    .dif2 {
+        background-size: 100% 100%;
+        width: 280px;
+        height: 279px;
+    }
+    .dif3 {
+        background-size: 100% 100%;
+        width: 280px;
+        height: 279px;
+    }
+    .servico,
+    .midia,
+    .tecnologica {
+        background-size: 100% 100%;
+        width: 280px;
+        height: 211px;
+    }
+
+}
+
+@media (width: 384px) {
+    #rodape {
+        height: auto;
+        width: auto;
+        overflow: hidden;
+    }
+    .area-texto{
+        overflow: hidden;
+        height: auto;
+        width: 100%;
+    }
+    form {
+        width: 100%;
+    }
+}
+/* -------------- RESPONSIVIDADE ----------------------*/
+
+@media (max-width:1100px) {
+    #texto-nav {
+        width: 100%;
+    }
+    #paragrafo > p, li{
+        font-size:14px;
+    }
+    #botao-contato {
+        margin-top: 100px;
+    }   
+    h3 {
+        width: 90%;
+    }
+
+    #row , #servicos, .row1, #diferenciais{
+        text-align: left;
+        justify-content: center;
+    }   
+    .dif1 > p, .dif2 > p, .dif3 > p {
+        margin-top: 200px;
+        font-size: 17px; 
+        margin-top: 120px;   
+    }
+}
+
+@media (max-width:1074px) {
+
+    h1 {
+        font-size: 80px;
+    }
+    * {
+        border: 1px solid black;
+    }
+    h3 {
+        font-size: 19px;
+    }
+    .servico > p, .tecnologica > p, .midia > p {
+        font-size: 17px;
+    }
+    .row1, #row {
+        flex-wrap: wrap;
+        padding-right: 10px;
+        padding-left: 10px;
+
+    }
+    .dif1 > p, .dif2 > p, .dif3 > p {
+        font-size: 20px;    
+    }
+    .dif3 {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 905px) {
+    h1 {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 950px) {
+    #paragrafo {
+        margin-left: 50px;
+    }
+
+    #contatos {
+        margin-left: 10px;
+    }
+    #contatos .logos {
+        display: block;
+        margin: 0;
+        width: 100%;
+    }
+    #contatos .logos img {
+        width: 70%;       
+        display: flex;
+    }
+    .contato > .email {
+        margin-right: 0;
+    }
+    #contatos .contato {
+        width: 100%;
+    }
+    #contatos .contato .email p, #contatos .contato .telefone p {
+        margin-right: 0;
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 895px) {
+    #paragrafo {
+        width: 550px;
+        margin: 0;
+    }
+    .container-paragrafo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        border: 1px solid black;
+    }
+    .img-logo {
+        height: 30px;
+        margin-top: 10px;
+    }
+    #botao-contato {
+        margin-top: 100px;
+    }
+    #row, .row1 {
+        justify-content: center;
+        display: grid;
+    }
+    .dif1, .dif2 {
+        margin-left: 0;
+    }
+
+    #paragrafo {
+        height: 400px;
+    }
+
+}
+
+@media (max-width: 802px) {
+    #contatos {
+        width: 100%;
+        margin-left: 0;}
+    form {
+        width: 100%;
+    }
+    form .input-box input, form .input-box textarea {
+        width: 70%;
+    }
+    footer {
+        background-color: yellow;
+        height: 910px;
+        padding-top: 50px;
+        width: 100vw;
+    }
+    #rodape {
+        display: grid;
+    }
+    h1 {
+     font-size: 60px;   
+    }
+    #nav ul > li > a {
+        font-size: 8px;
+    }
+
+    #contatos .contato {
+        border: 1px solid white;
+        display: flex;
+        justify-content: center;
+    }
+    #contatos .contato .email, #contatos .contato .telefone {
+        margin: 0;
+    }
+    
+}
+
+@media (max-width: 744px) {
+    #paragrafo {
+        width: 400px;
+        height: 550px;
+        margin: 0;
+    }
+}
