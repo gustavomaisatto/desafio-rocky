@@ -296,6 +296,7 @@ input::placeholder {
     color: #DCDCDC; 
 }
 fieldset {
+    width: auto;
     padding-top: 10px;
     border: none;
 }
@@ -360,7 +361,7 @@ textarea::placeholder {
     padding: 0;
 }
 .logos > img {
-    width: 370px;
+    width: 370px;   
 }
 .contato {
     display: flex;
@@ -689,7 +690,13 @@ textarea::placeholder {
 
 }
 
-@media (width: 384px) {
+@media (max-width: 384px) {
+    header #texto-nav h1 {
+        font-size: 20px;
+    }
+   h2, #diferenciais h2 {
+        font-size: 20px;
+    }
     #rodape {
         height: auto;
         width: auto;
@@ -701,8 +708,31 @@ textarea::placeholder {
         width: 100%;
     }
     form {
+        width: auto;
+    }
+    .endereco p {
+        font-size: 12px;
+    }
+    .endereco img {
+        width: 20px;
+        height: 20px;
+        margin-top: 5px;
+    }
+    .servico p, .midia p, .tecnologica p {
+        font-size: 10px;
+        margin-top: 3px;
+    }
+    .servico h3, .midia h3, .tecnologica h3 {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    #rodape {
         width: 100%;
     }
+    .container-paragrafo #paragrafo {
+        height: 750px;
+    }
+
 }
 /* -------------- RESPONSIVIDADE ----------------------*/
 
