@@ -1225,7 +1225,7 @@ textarea::placeholder {
     }
 }
 
-@media (max-height: 600px) and (max-width: 1360px) {
+@media (max-height: 600px) {
     h1 {
         font-size: 80px;
     }
