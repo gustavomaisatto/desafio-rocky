@@ -76,19 +76,19 @@ header {
 
 }
 #texto-nav #descricao {
-    margin-top: 50px;
+    margin-top: 40px;
     width: 70%;
 }
 h1 {
     margin-top: 50px;
-    font-size: 120px;
+    font-size: 100px;
 }
 p {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
 }
 .botao {
-    margin-top: 100px;
+    margin-top: 10%;
 }
 #botao-contato {
     color: white;
@@ -497,7 +497,7 @@ textarea::placeholder {
         margin-top: 50px;   
     }
     .botao {
-        margin-top: 200px;
+        margin-top: 10%;
     }
 }
 
@@ -510,7 +510,7 @@ textarea::placeholder {
         font-size: 19px;
     }
     .botao {
-        margin-top: 200px;
+        margin-top: 10%;
     }
     .servico > p, .tecnologica > p, .midia > p {
         font-size: 17px;
@@ -664,7 +664,33 @@ textarea::placeholder {
         margin: 0;
     }
 }
+@media (max-height: 750px) {
+    #botao-contato {
+        margin-top: 30px;
+    }
+}
+@media (max-height: 700px) {
+    #botao-contato {
+        margin-top: 0px;
+    }
+    .botao {
+        margin-top: 10%;
+    }
+}
 
+@media (max-height: 569px) {
+    .botao {
+        margin-top: 50px;
+    }
+}
+@media (max-height: 515px) {
+    .botao {
+        margin-top: 10px;
+    }
+    #texto-nav {
+        margin-top: 20px;
+    }
+}
 @media (max-width: 768px) {
     #servico-seta {
         background: url(../imagens/mobile/seta.png);
@@ -1136,4 +1162,85 @@ textarea::placeholder {
         height: 40px;
     }
 
+}
+
+/*-------------RESPONSIVIDADE HEIGHT-----------------*/
+@media (max-height: 750px) {
+    #botao-contato {
+        margin-top: 30px;
+    }
+}
+@media (max-height: 700px) {
+    #botao-contato {
+        margin-top: 0px;
+    }
+    .botao {
+        margin-top: 100px;
+    }
+}
+
+@media (max-height: 569px) {
+    .botao {
+        margin-top: 50px;
+    }
+    #texto-nav #descricao {
+        width: 90%;
+    }
+}
+@media (max-height: 515px) {
+    #texto-nav {
+        margin-top: 0;
+    }
+}
+
+@media (max-height: 480px) {
+    #texto-nav #descricao {
+        margin-top: 20px;
+    }
+    #botao-contato {
+        width: 250px;
+        height: 45px;
+        font-size: 13px;
+    }
+    #texto-nav #descricao > p {
+        font-size: 14px;
+    }
+}
+@media (max-height: 434px) {
+    h1 {
+        margin-top: 15px;
+    }
+    .botao {
+        margin-top: 20px;
+    }
+}
+
+@media(max-height: 350px) {
+    #botao-contato {
+        width: 240px;
+        height: 35px;
+    }
+    .botao {
+        margin-top: 10px;
+    }
+}
+
+@media (max-height: 600px) and (max-width: 1360px) {
+    h1 {
+        font-size: 80px;
+    }
+}
+
+
+@media (max-height: 540px) {
+    h1 {
+        font-size: 70px;
+    }
+}
+
+
+@media (max-height: 350px) {
+    h1 {
+        font-size: 60px;
+    }
 }
