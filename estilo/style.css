@@ -4,7 +4,6 @@
     font-family: 'Montserrat', sans-serif;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid rgb(55, 0, 255);
 }
 
 /*Header and navigation menu*/
@@ -34,19 +33,37 @@ header {
     display: flex;
     margin-top: 15px;
     height: 30px;
+    margin-right: 10px;
 }
-
-#nav > #menu > li {
+#nav > #menu > .menu-item {
     list-style: none;
-    margin-left: 25px;
+    margin-left: 25px;  
     font-weight: bold;
+    display: grid;
+    justify-content: center;
+}
+#nav > #menu > .menu-item-home {
+    list-style: none;
+    margin-left: 25px;  
+    font-weight: bold;
+    display: grid;
+    justify-content: center; 
+    display: none;
 }
 .menu-item a {
     color: white;
     text-decoration: none;
     font-size: 0.8em;
 }
-
+.menu-item-home a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+.menu-item:first-child {
+    width: 0;
+    margin-left: 0;
+}
 #nav > ul > li a:hover {
     color: rgb(182, 182, 182);
 }
@@ -55,16 +72,23 @@ header {
     margin-top: 70px;
         width: 100%;
     max-width: 1360px;
+    height: calc(100vh - 150px);
+
 }
 #texto-nav #descricao {
+    margin-top: 50px;
     width: 70%;
 }
 h1 {
-    font-size: 95px;
+    margin-top: 50px;
+    font-size: 120px;
 }
 p {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
+}
+.botao {
+    margin-top: 100px;
 }
 #botao-contato {
     color: white;
@@ -77,22 +101,21 @@ p {
     border-radius: 25px;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 70px;
 }
-/*Main section */
+/*Main section (corpo do projeto)*/
 section {
     background: url(../imagens/web/bg.png);
     width: 90%;
     padding: 0;
     background-size: cover;
     max-width: 1360px;
-    border: 1px solid black;
 }
 h2 {
     font-size: 38px;
-    margin-top: 95px;
+    margin-top: 0;
     margin-left: 85px;
     margin-bottom: 60px;
+    padding-top: 95px;
 }
 #paragrafo {
     background-color: white ;
@@ -191,7 +214,6 @@ h3 {
     display: flex;
     padding-right: 0;
     margin-top: 80px;  
-    margin-bottom: 20px;
     justify-content: space-evenly;
 }
 
@@ -213,9 +235,9 @@ h3 {
 
 .dif1 > p {
     font-size: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-top: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 0;
     font-weight: bold;
 }
 .dif2 {
@@ -233,9 +255,9 @@ h3 {
 }
 .dif2 > p {
     font-size: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-top:  150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top:  0;
     font-weight: bold;
 }
 .dif3 {
@@ -253,12 +275,17 @@ h3 {
 }
 .dif3 > p {
     font-size: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-top: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 0;
     font-weight: bold;
 }
+.dif1 > img, .dif2 > img, .dif3 > img {
+    width: 100px;
+    margin-top: 50px;
+}
 /*footer and contacts / form */
+
 footer {
     background-color: yellow;
     height: 600px;
@@ -375,7 +402,7 @@ textarea::placeholder {
 }
 .contato > .telefone {
     border-left: 1px solid white;
-    padding-left: 40px;
+    padding-left: 20px;
 }
 .contato > .email {
     margin-left: -05px;
@@ -420,12 +447,278 @@ textarea::placeholder {
     display: none;
 }
 #servico-seta {
+    position: absolute;
     display: none;
 }
 #servico-lista {
     display: none;
 }
+
+#diferenciais-lista {
+    display: none;
+}
+.diferenciais-lista-item {
+    display: none;
+}
+#diferenciais-seta {
+    display: none;
+}
+
+
+/* -------------- RESPONSIVIDADE ----------------------*/
+@media (max-width: 1200px) {
+    h3 {
+        font-size: 1em;
+    }
+}
+
+@media (max-width:1100px) {
+    #texto-nav {
+        width: 100%;
+    }
+    #paragrafo > p, li{
+        font-size:14px;
+    }
+    h1 {
+        font-size: 100px;
+    }
+    h3 {
+        width: 90%;
+    }
+    .servico > p, .midia > p, .tecnologica > p {
+        font-size: 1em;
+    }
+    #row , #servicos, .row1, #diferenciais{
+        text-align: left;
+        justify-content: center;
+    }   
+    .dif1 > p, .dif2 > p, .dif3 > p {
+        font-size: 17px; 
+        margin-top: 50px;   
+    }
+    .botao {
+        margin-top: 200px;
+    }
+}
+
+@media (max-width:1074px) {
+
+    h1 {
+        font-size: 80px;
+    }
+    h3 {
+        font-size: 19px;
+    }
+    .botao {
+        margin-top: 200px;
+    }
+    .servico > p, .tecnologica > p, .midia > p {
+        font-size: 17px;
+    }
+    .row1, #row {
+        flex-wrap: wrap;
+        padding-right: 10px;
+        padding-left: 10px;
+
+    }
+    .dif1 > p, .dif2 > p, .dif3 > p {
+        font-size: 20px;    
+    }
+    .dif3 {
+        margin-right: 0;
+    }
+    #nav #menu .menu-item a {
+        font-size: 0.6rem;
+    }
+    #nav #menu .menu-item-home a {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 905px) {
+    h1 {
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 950px) {
+    #paragrafo {
+        margin-left: 50px;
+    }
+
+    #contatos {
+        margin-left: 10px;
+    }
+    #contatos .logos {
+        display: block;
+        margin: 0;
+        width: 100%;
+    }
+    #contatos .logos img {
+        width: 70%;       
+        display: flex;
+    }
+    .contato > .email {
+        margin-right: 0;
+    }
+    #contatos .contato {
+        width: 100%;
+    }
+    #contatos .contato .email p, #contatos .contato .telefone p {
+        margin-right: 0;
+        font-size: 12px;
+    }
+    #nav #menu .menu-item a {
+        font-size: 0.5rem;
+    }
+    #nav #menu .menu-item-home a {
+        font-size: 0.5rem;
+    }
+
+
+}
+
+@media (max-width: 895px) {
+    #paragrafo {
+        width: 550px;
+        margin: 0;
+    }
+    .container-paragrafo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+    }
+    .img-logo {
+        height: 30px;
+        margin-top: 10px;
+    }
+    #botao-contato {
+        margin-top: 80px;
+    }
+    #row, .row1 {
+        justify-content: center;
+        display: grid;
+    }
+    .dif1, .dif2 {
+        margin-left: 0;
+    }
+
+    #paragrafo {
+        height: 400px;
+    }
+
+}
+
+@media (max-width: 802px) {
+    #contatos {
+        width: 100vw;
+        margin-left: 0;}
+        #contatos .logos img {
+            margin-top: 10px;
+        }
+    form {
+        width: 100%;
+    }
+    form .input-box input, form .input-box textarea {
+        width: 70%;
+    }
+    header {
+        width: 100vw;
+    }
+    section{
+        width: 100vw;
+    }
+    footer {
+        background-color: yellow;
+        height: 910px;
+        padding-top: 50px;
+        width: 100vw;
+    }
+    #rodape {
+        display: grid;
+    }
+    h1 {
+     font-size: 60px;   
+    }
+    #nav ul > li > a {
+        font-size: 8px;
+    }
+
+    #contatos .contato {
+        display: flex;
+        justify-content: center;
+    }
+    #contatos .contato .email, #contatos .contato .telefone {
+        margin: 0;
+    }
+    #contatos .contato .telefone {
+        margin-left: 20px;
+    }
+}
+/*-----------------RESPONSIVIDADE MOBILE----------------------------*/
+@media (max-width: 744px) {
+    #paragrafo {
+        width: 400px;
+        height: 550px;
+        margin: 0;
+    }
+}
+
 @media (max-width: 768px) {
+    #servico-seta {
+        background: url(../imagens/mobile/seta.png);
+        cursor: pointer;
+        margin: 0;
+        display: block;
+        right: 70px;
+        margin-top: -2px;
+        width: 20px;
+        height: 20px;
+        background-size: 100% 100%;
+        transition: 0.3s;
+    }
+    #nav.active #menu .menu-item-home {
+        margin-top: 30px;
+        display: grid;
+    }
+    #servico-seta.lista-servico {
+        transform: rotate(180deg);
+    }
+    #servico-seta:hover {
+        color: rgb(182, 182, 182);
+    }
+    
+    #diferenciais-seta {
+        background: url(../imagens/mobile/seta.png);
+        cursor: pointer;
+        margin: 0;
+        display: block;
+        right: 60px;
+        margin-top: -2px;
+        width: 20px;
+        height: 20px;
+        background-size: 100% 100%;
+        transition: 0.3s;
+        position: absolute;
+    }
+    #diferenciais-seta.lista-diferenciais {
+        transform: rotate(180deg);
+    }
+    #diferenciais-seta:hover {
+        color: rgb(182, 182, 182);
+    }
+    #nav.active #menu { 
+        padding-left: 50px;
+    }
+    #nav #menu .menu-item a {
+        font-weight: 400;
+
+    }
+    #nav #menu .menu-item-home a {
+        font-weight: 400;
+
+    }
     #imagem {
         width: 100%;
         display: flex;
@@ -437,9 +730,6 @@ textarea::placeholder {
         width: 200px;
         height: 50px;
     }
-    #image a {
-        border: 1px solid;
-    }
     #btn-mobile {
         display: block;
         
@@ -450,7 +740,8 @@ textarea::placeholder {
         width: 0px;
         top: 0px;
         background-color:  rgba(128, 128, 128, 0.541);
-        height: 250px;
+        backdrop-filter: blur(5px);
+        height: auto;
         z-index: 1000;
         transition: .6s;
         visibility: hidden;
@@ -460,36 +751,60 @@ textarea::placeholder {
         padding-top: 10px;
         padding-left: auto;
         padding-right: auto;
+        padding-bottom: 20px;
     }
     #nav.active #menu {
         display: block;
-        width: 32%;
+        width: 200px;
         visibility: visible;
         overflow-x: auto;
         padding-left: -10px;
+        height: auto;
     }
     
     #servico-lista {
         display: none;
         height: 0;
-        transition: 0.6s;
     }
     #servico-lista li {
+        width: 100%;
         display: none;
-        font-weight: bold;
-        padding: 0.5rem 0;
-        font-size: 10px;
+        padding:0.5rem 0;
+        font-size: 14px;
         color: white;
+        margin-top: 2px;
+        font-weight: 400;
     }
-    #nav.servico #servico-lista {
-        display: block;
-        height: 100px;
+    #diferenciais-lista {
+        display: none;
+        height: 0;
+    }
+    #diferenciais-lista li {
+        width: 100%;
+        display: none;
+        font-weight: 400;
+        padding: 0.5rem 0;
+        font-size: 14px;
+        color: white;
+        margin-top: 2px;
+    }
+    
+    #nav #menu #servico-lista-container  #servico-seta.lista-servico + #servico-lista{
+        display: grid;
+        height: auto;
     }
     #nav.active li {
         display: block;
     }
     #nav.active #btn-mobile {
         visibility: hidden;
+    }
+    #nav #menu #diferenciais-lista-container #diferenciais-seta.lista-diferenciais + #diferenciais-lista{
+        display: grid;
+        height: auto;
+    }
+    #servico-seta.fecha-lista + #servico-lista {
+        display: none;
     }
 
     ul > li{
@@ -532,8 +847,11 @@ textarea::placeholder {
         background-color: white;
         margin-top: 5px;
     }
-    #servico-lista-container span {
+    #servico-container span {
         display: block;
+        position: absolute;
+        margin-left: 90px;
+        margin-top: -2px;
         cursor: pointer;
     }
     #row, .row1{
@@ -544,16 +862,25 @@ textarea::placeholder {
         background: url(../imagens/mobile/s3\ ft1.png);
         width: 380px;
         height: 311px;
+        background-size: contain;
+        background-repeat: no-repeat;
+
     }
     .midia {
         background: url(../imagens/mobile/s3\ ft2.png);
         width: 380px;
         height: 311px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 20px;
     }
     .tecnologica {
         background: url(../imagens/mobile/s3\ ft3.png);
         width: 380px;
         height: 311px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 20px;
     }
     .dif1 {
         background: url(../imagens/mobile/s4_ft1.png);
@@ -576,7 +903,7 @@ textarea::placeholder {
     }
     .servico > p, .midia > p, .tecnologica > p{
         margin-top: 20px;
-        font-size: 10px;
+        font-size: 16px;
     }
 
      h3 {
@@ -585,6 +912,11 @@ textarea::placeholder {
     header {
         background: url(../imagens/web/s1_ft1.png);
         height: 100vh;
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    section {
         width: 100vw;
         background-repeat: no-repeat;
         background-size: 100% 100%;
@@ -610,6 +942,23 @@ textarea::placeholder {
     #servicos h2, #diferenciais h2, article h2 {
         margin-left: 0;
     }
+
+    #nav.active > #menu > .menu-item > a {
+        font-size: 0.8rem;
+    }
+    #nav.active > #menu > .menu-item-home > a {
+        font-size: 0.8rem;
+    }
+    #nav #menu .menu-item {
+        margin: 0;
+        margin-top: 15px;
+    }
+    #nav #menu .menu-item-home {
+        margin: 0;
+        margin-top: 15px;
+    }
+
+
 }
 
 @media (max-width:550px) {
@@ -619,12 +968,14 @@ textarea::placeholder {
     header {
 
         background: url(../imagens/mobile/s1\ mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     section {
         background: none;
     }
      #row .servico > p, #row .tecnologica > p, #row .midia > p {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     #row, .row1 {
@@ -646,7 +997,7 @@ textarea::placeholder {
         justify-content: center;
     }
     #contatos .telefone {
-
+        margin-left: 10px;
         margin: 0;
         padding-left: 10px;
     }
@@ -684,15 +1035,40 @@ textarea::placeholder {
     .midia,
     .tecnologica {
         background-size: 100% 100%;
-        width: 280px;
-        height: 211px;
+        width: 330px;
+        height: 261px;
+    }
+    h3 {
+        margin-top: 10px;
+    }
+    .servico p,
+    .midia p,
+    .tecnologica p { 
+        padding: 0;
+
+    }
+    form {
+        width: 100vw;
+    }
+
+    .dif1 > p, .dif2 > p, .dif3 > p {
+        margin-top: 0;
+    }
+    h3 {
+        font-size: 18px;
     }
 
 }
 
 @media (max-width: 384px) {
+    body {
+        margin: 0;
+    }
+    #row {
+        margin-right: 0;
+    }
     header #texto-nav h1 {
-        font-size: 20px;
+        font-size: 30px;
     }
    h2, #diferenciais h2 {
         font-size: 20px;
@@ -707,9 +1083,6 @@ textarea::placeholder {
         height: auto;
         width: 100%;
     }
-    form {
-        width: auto;
-    }
     .endereco p {
         font-size: 12px;
     }
@@ -718,187 +1091,49 @@ textarea::placeholder {
         height: 20px;
         margin-top: 5px;
     }
-    .servico p, .midia p, .tecnologica p {
-        font-size: 10px;
-        margin-top: 3px;
-    }
     .servico h3, .midia h3, .tecnologica h3 {
-        font-size: 14px;
+        font-size: 15px;
         margin-top: 20px;
     }
     #rodape {
         width: 100%;
     }
     .container-paragrafo #paragrafo {
-        height: 750px;
+        width: 90vw;
+        height: auto;
     }
-
-}
-/* -------------- RESPONSIVIDADE ----------------------*/
-
-@media (max-width:1100px) {
-    #texto-nav {
-        width: 100%;
+    .servico, .midia, .tecnologica {
+        width: 300px;
+        height: 231px;
+        margin-top: 30px;
     }
-    #paragrafo > p, li{
-        font-size:14px;
-    }
-    #botao-contato {
-        margin-top: 100px;
-    }   
-    h3 {
-        width: 90%;
-    }
-
-    #row , #servicos, .row1, #diferenciais{
-        text-align: left;
-        justify-content: center;
-    }   
-    .dif1 > p, .dif2 > p, .dif3 > p {
-        margin-top: 200px;
-        font-size: 17px; 
-        margin-top: 120px;   
-    }
-}
-
-@media (max-width:1074px) {
-
-    h1 {
-        font-size: 80px;
-    }
-    * {
-        border: 1px solid black;
-    }
-    h3 {
-        font-size: 19px;
-    }
-    .servico > p, .tecnologica > p, .midia > p {
-        font-size: 17px;
-    }
-    .row1, #row {
-        flex-wrap: wrap;
-        padding-right: 10px;
-        padding-left: 10px;
-
-    }
-    .dif1 > p, .dif2 > p, .dif3 > p {
-        font-size: 20px;    
-    }
-    .dif3 {
-        margin-right: 0;
-    }
-}
-
-@media (max-width: 905px) {
-    h1 {
-        font-size: 70px;
-    }
-}
-
-@media (max-width: 950px) {
-    #paragrafo {
-        margin-left: 50px;
-    }
-
-    #contatos {
-        margin-left: 10px;
-    }
-    #contatos .logos {
-        display: block;
-        margin: 0;
-        width: 100%;
-    }
-    #contatos .logos img {
-        width: 70%;       
-        display: flex;
-    }
-    .contato > .email {
-        margin-right: 0;
-    }
-    #contatos .contato {
-        width: 100%;
-    }
-    #contatos .contato .email p, #contatos .contato .telefone p {
-        margin-right: 0;
-        font-size: 12px;
-    }
-
-}
-
-@media (max-width: 895px) {
-    #paragrafo {
-        width: 550px;
-        margin: 0;
-    }
-    .container-paragrafo {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        align-items: center;
-        border: 1px solid black;
-    }
-    .img-logo {
-        height: 30px;
+    #row .servico > p, #row .tecnologica > p, #row .midia > p {
+        margin-top: 3px;
+        font-size: 13px;
+        line-height: 17px;
+        font-weight: 500;
         margin-top: 10px;
-    }
-    #botao-contato {
-        margin-top: 100px;
-    }
-    #row, .row1 {
-        justify-content: center;
-        display: grid;
-    }
-    .dif1, .dif2 {
-        margin-left: 0;
-    }
+        padding: 0;
 
-    #paragrafo {
-        height: 400px;
     }
-
+    .dif1, .dif2, .dif3 {
+        width: 240px;
+        height: 239px;
+    }
+    .endereco > p{
+        width: auto;
+    }
+    .dif1 > img, .dif2 > img, .dif3 > img {
+        margin-top: 15px;
+    }
+    .dif1 > p, .dif2 > p, .dif3 > p {
+        font-size: 15px;
+    }
 }
-
-@media (max-width: 802px) {
-    #contatos {
-        width: 100%;
-        margin-left: 0;}
-    form {
-        width: 100%;
-    }
-    form .input-box input, form .input-box textarea {
-        width: 70%;
-    }
-    footer {
-        background-color: yellow;
-        height: 910px;
-        padding-top: 50px;
-        width: 100vw;
-    }
-    #rodape {
-        display: grid;
-    }
-    h1 {
-     font-size: 60px;   
-    }
-    #nav ul > li > a {
-        font-size: 8px;
+@media (max-width: 320px) {
+    #imagem img {
+        width: 150px;
+        height: 40px;
     }
 
-    #contatos .contato {
-        border: 1px solid white;
-        display: flex;
-        justify-content: center;
-    }
-    #contatos .contato .email, #contatos .contato .telefone {
-        margin: 0;
-    }
-    
-}
-
-@media (max-width: 744px) {
-    #paragrafo {
-        width: 400px;
-        height: 550px;
-        margin: 0;
-    }
 }
